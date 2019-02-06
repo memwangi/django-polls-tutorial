@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+// Todo: Add support for other sources
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
